@@ -1,0 +1,25 @@
+#!/usr/bin/ruby
+require "fileutils"
+
+cleanup_dir = "/Users/student/Desktop/Cleanup"
+
+def move_to_cleanup(dir)
+    FileUtils.cd(dir)
+    # Get all files on Desktop that aren't Cleanup/
+    contents = Dir.children(Dir.getwd)
+    contents.each do |c|
+        if c not =~ /Desktop/
+            # Move into cleanup folder
+            FileUtils.mv c, cleanup_dir + c
+        end
+    end
+end
+
+move_to_cleanup "/Users/student/Desktop"
+move_to_cleanup "/Users/student/Documents"
+move_to_cleanup "/Users/student/Downloads"
+
+
+
+
+
