@@ -6,7 +6,7 @@ cd $CLEANUP_DIR
 FILES=$(ls)
 
 for f in $FILES; do
-    if ![[ $f =~ "Cleanup" ]]; then
+    if ! [[ $f =~ "Cleanup" ]]; then
         mv $f $CLEANUP_DEST
     fi
 done
