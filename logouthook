@@ -1,2 +1,5 @@
-#!/usr/bin/ruby
+#!/bin/bash
 
+/usr/local/bin/cleanup /Users/student/Desktop /Users/student/Cleanup
+/usr/local/bin/cleanup /Users/student/Documents /Users/student/Cleanup
+rm -rf /Users/student/Downloads/*
