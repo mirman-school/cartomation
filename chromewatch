@@ -1,13 +1,14 @@
 #!/bin/bash
 USER=$1
 
+rm "Local State"
+
 cd /Users/$USER/Library/Application\ Support/Google/Chrome
 FILES=$(ls)
 
-for f in $FILES; do
-    if [[ $f =~ "Profile\s\d" ]]; then
-        rm -rf $f
-    fi 
+find . -iname "Profile*" | while read f; do
+    echo $f
+    rm -rf "$f"
 done
 
 exit 0
