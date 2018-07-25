@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>org.mirman.touchsomefile</string>
+    <string>org.mirman.cartomation</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/cleanup</string>
