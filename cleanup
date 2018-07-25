@@ -1,13 +1,15 @@
 #!/bin/bash
 CLEANUP_DIR=$1
-CLEANUP_DESTINATIONS=$@:$2
+echo "Cleanup Dir: $1"
 
-for d in $CLEANUP_DESTINATIONS; do
+for d in ${@:2}; do
+    echo "moving to $d"
     cd $d
     FILES=$(ls)
     for f in $FILES; do
+        echo $f
         if ! [[ $f =~ "Cleanup" ]]; then
-            mv $f $CLEANUP_DEST
+            mv $f $CLEANUP_DIR
         fi
     done   
 done
