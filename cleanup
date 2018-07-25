@@ -17,7 +17,8 @@ done
 # Remove Default Chrome Profile
 rm -rf /Users/student/Library/Application\ Support/Google/Chrome/Default
 
-
+# Empty Trash
+rm -rf /Users/student/.Trash/*
 
 
 
