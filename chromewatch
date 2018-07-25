@@ -2,6 +2,7 @@
 USER=$1
 
 rm "Local State"
+rm Default
 
 cd /Users/$USER/Library/Application\ Support/Google/Chrome
 FILES=$(ls)
