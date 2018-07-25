@@ -1,15 +1,17 @@
 #!/bin/bash
 CLEANUP_DIR=$1
-CLEANUP_DEST=$2
+CLEANUP_DESTINATIONS=$@:$2
 
-cd $CLEANUP_DIR
-FILES=$(ls)
-
-for f in $FILES; do
-    if ! [[ $f =~ "Cleanup" ]]; then
-        mv $f $CLEANUP_DEST
-    fi
+for d in $CLEANUP_DESTINATIONS; do
+    cd $d
+    FILES=$(ls)
+    for f in $FILES; do
+        if ! [[ $f =~ "Cleanup" ]]; then
+            mv $f $CLEANUP_DEST
+        fi
+    done   
 done
+
 
 
 
