@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>org.mirman.cartomation</string>
+    <string>org.mirman.cartomation.cleanup</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/cleanup</string>
@@ -16,7 +16,7 @@
         <key>Minute</key>
         <integer>0</integer>
         <key>Hour</key>
-        <integer>6</integer>
+        <integer>16</integer>
     </dict>
 </dict>
 </plist>

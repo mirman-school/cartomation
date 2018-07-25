@@ -1,0 +1,13 @@
+#!/bin/bash
+USER=$1
+
+cd /Users/$USER/Library/Application\ Support/Google/Chrome
+FILES=$(ls)
+
+for f in $FILES; do
+    if [[ $f =~ "Profile\s\d" ]]; then
+        rm -rf $f
+    fi 
+done
+
+exit 0
