@@ -8,7 +8,7 @@
     <array>
         <string>/bin/rm</string>
         <string>-rf</string>
-        <string>/Users/student/Cleanup/*</string>
+        <string>/Users/student/Cleanup/</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
