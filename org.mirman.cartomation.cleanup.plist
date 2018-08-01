@@ -10,6 +10,7 @@
         <string>/Users/student/Cleanup/</string>
         <string>/Users/student/Desktop</string>
         <string>/Users/student/Documents</string>
+        <string>/Users/student/Downloads</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
